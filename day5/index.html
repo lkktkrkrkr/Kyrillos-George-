@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Day 5 Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+      --card-bg: rgba(255, 255, 255, 0.05);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #818cf8;
+      --accent-glow: rgba(129, 140, 248, 0.25);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg-gradient);
+      min-height: 100vh;
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 850px;
+      width: 100%;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, #a5b4fc, #e0e7ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .notice-card {
+      background: rgba(129, 140, 248, 0.1);
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: 0 4px 20px var(--accent-glow);
+    }
+
+    .notice-card span {
+      font-size: 1.5rem;
+    }
+
+    .tasks-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .task-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 1.25rem;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    .task-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .task-number {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.4rem;
+    }
+
+    .task-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .task-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    footer {
+      margin-top: 3rem;
+      color: var(--text-muted);
+      font-size: 0.875rem;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1 id="mainTitle">JS Day 5 Practice Tasks</h1>
+      <p class="subtitle">CRUD Operations & Callback Functions</p>
+    </header>
+
+    <div class="notice-card">
+      <span>💡</span>
+      <div>
+        <strong>Console Output Active</strong>
+        <p style="font-size: 0.9rem; color: var(--text-muted);">
+          All tasks output and run automatically in the browser console. Press <strong>F12</strong> or <strong>Ctrl+Shift+I</strong> to open DevTools.
+        </p>
+      </div>
+    </div>
+
+    <div class="tasks-grid">
+      <div class="task-card">
+        <div class="task-number">Task 01</div>
+        <div class="task-title">Array CRUD Operations</div>
+        <div class="task-desc">Implements Create, Read, Update, and Delete on a simple items array without using the DOM.</div>
+      </div>
+      <div class="task-card">
+        <div class="task-number">Task 02</div>
+        <div class="task-title">Functions & Callback Functions</div>
+        <div class="task-desc">Passes a multiply function inside a calculate function and logs the output through displayResult.</div>
+      </div>
+      <div class="task-card" style="grid-column: 1 / -1;">
+        <div class="task-number">Task 03</div>
+        <div class="task-title">setTimeout & setInterval</div>
+        <div class="task-desc">Includes user greeting timeout, countdown interval with auto-clear, and demonstration of clearing timers.</div>
+      </div>
+    </div>
+
+    <footer>
+      JavaScript Day 5 Practice Workspace
+    </footer>
+  </div>
+
+  <script src="day5.js"></script>
+</body>
+
+</html>
