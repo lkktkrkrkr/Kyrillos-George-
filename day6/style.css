@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcfcfc;
+    color: #333;
+    margin: 20px;
+}
+
+.box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form {
+    position: relative;
+    border: 1px solid #e2e8f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.logo {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    height: 110px;
+}
+
+.form h2 {
+    text-align: center;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.group {
+    flex: 0 1 220px;
+    display: flex;
+    flex-direction: column;
+}
+
+.group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.group input[type="text"],
+.group select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.check {
+    justify-content: flex-end;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 0;
+}
+
+.lbl {
+    font-weight: normal;
+}
+
+.btns {
+    text-align: center;
+}
+
+.btns button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.btns button:hover {
+    background-color: #eee;
+}
+
+.search {
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.opts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.opts label {
+    cursor: pointer;
+}
+
+.opts select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.opts .lbl {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.table button {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.table button:hover {
+    background-color: #eee;
+}

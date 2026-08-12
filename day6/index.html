@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="box">
+        <div class="form">
+            <img src="logo.png" alt="Logo" class="logo">
+            <h2>مزارع الخير</h2>
+            <div class="grid">
+                <div class="group">
+                    <label for="name">اسم المنتج</label>
+                    <input type="text" id="name" placeholder="Product Name">
+                </div>
+                <div class="group">
+                    <label for="id">ID</label>
+                    <input type="text" id="id">
+                </div>
+                <div class="group">
+                    <label for="desc">وصف المنتج</label>
+                    <input type="text" id="desc" placeholder="Description">
+                </div>
+                <div class="group">
+                    <label for="color">لون المنتج</label>
+                    <select id="color">
+                        <option value="">Select Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                        <option value="Blue">Blue</option>
+                        <option value="Yellow">Yellow</option>
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                    </select>
+                </div>
+                <div class="group check">
+                    <div class="row" style="margin-top: auto;">
+                        <input type="checkbox" id="stock">
+                        <span class="lbl">Out of stock</span>
+                    </div>
+                </div>
+            </div>
+            <div class="btns">
+                <button id="add">add</button>
+                <button id="update" style="display: none;">update</button>
+                <button id="cancel" style="display: none;">cancel</button>
+            </div>
+        </div>
+
+        <div class="search">
+            <input type="text" id="search" placeholder="search">
+            <div class="opts">
+                <span>Search in:</span>
+                <label><input type="checkbox" id="searchId"> ID</label>
+                <label><input type="checkbox" id="searchName"> Name</label>
+                
+                <span class="lbl">Color:</span>
+                <select id="searchColor">
+                    <option value="">All Colors</option>
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                </select>
+                
+                <span class="lbl">Stock:</span>
+                <select id="searchStock">
+                    <option value="">All Stock</option>
+                    <option value="in">In Stock</option>
+                    <option value="out">Out of Stock</option>
+                </select>
+            </div>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>الاسم</th>
+                    <th>الوصف</th>
+                    <th>اللون</th>
+                    <th>Out of stock</th>
+                    <th>التعديلات</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
