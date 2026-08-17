@@ -1,0 +1,38 @@
+<h2 class="text-center mb-4">Contact Me</h2>
+<div class="row g-4 justify-content-center">
+  <div class="col-md-5">
+    <div class="card p-3">
+      <div class="card-body">
+        <h5 class="card-title mb-3">Info</h5>
+        <p><strong>Phone:</strong> +20 155 333 6793</p>
+        <p><strong>Location:</strong> Fayoum, Egypt</p>
+        <div class="d-grid gap-2 mt-3">
+          <a href="tel:+201553336793" class="btn btn-secondary">Call</a>
+          <a href="https://www.linkedin.com/in/kyrillos-george-260876327" target="_blank" class="btn btn-outline-secondary">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7">
+    <div class="card p-3">
+      <div class="card-body">
+        <h5 class="card-title mb-3">Send Message</h5>
+        <form (ngSubmit)="f()">
+          <div class="mb-3">
+            <label class="form-label">Name</label>
+            <input type="text" class="form-control" placeholder="Your name" [(ngModel)]="u.n" name="n" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="Your email" [(ngModel)]="u.e" name="e" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="3" placeholder="Your message..." [(ngModel)]="u.t" name="t" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-secondary w-100">{{m}}</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

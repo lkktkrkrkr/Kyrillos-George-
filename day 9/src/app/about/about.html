@@ -1,0 +1,26 @@
+<div class="row align-items-center mb-4">
+  <div class="col-md-4 text-center mb-3">
+    <img src="assets/profile/kyrillos.png" alt="Kyrillos George" class="img-fluid rounded-circle profile-img">
+  </div>
+  <div class="col-md-8">
+    <h2>About Me</h2>
+    <h5 class="text-muted">Engineering Student & Full-Stack Developer</h5>
+    <p>
+      I'm Kyrillos George, an engineering student and Full-Stack developer based in Fayoum, Egypt. With expertise in Flutter development and UI/UX principles, I build digital products that are both functional and easy to use.
+    </p>
+    <p>
+      As an educator and coach, I simplify technical concepts and empower students with practical programming skills.
+    </p>
+  </div>
+</div>
+
+<div class="row g-3">
+  <div class="col-md-3 col-sm-6" *ngFor="let x of h">
+    <div class="card text-center p-3">
+      <div class="card-body">
+        <h6>{{x.t}}</h6>
+        <p class="text-muted mb-0">{{x.d}}</p>
+      </div>
+    </div>
+  </div>
+</div>

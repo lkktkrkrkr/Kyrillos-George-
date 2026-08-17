@@ -1,0 +1,12 @@
+<h2 class="text-center mb-4">Gallery</h2>
+<div class="row g-4">
+  <div class="col-md-4" *ngFor="let x of p">
+    <div class="card">
+      <img src="assets/projects/{{x.img}}" class="card-img-top" alt="{{x.t}}">
+      <div class="card-body">
+        <h5 class="card-title">{{x.t}}</h5>
+        <p class="card-text text-muted">{{x.d}}</p>
+      </div>
+    </div>
+  </div>
+</div>
